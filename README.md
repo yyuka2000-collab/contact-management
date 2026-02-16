@@ -19,6 +19,9 @@ FashionablyLate（フォーム送信管理システム）
 
 ```bash
 git clone git@github.com:yyuka2000-collab/contact-management.git
+または
+git clone https://github.com/yyuka2000-collab/contact-management.git
+
 cd contact-management
 ```
 
