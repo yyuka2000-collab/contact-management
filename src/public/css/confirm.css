@@ -1,0 +1,178 @@
+/* 基本スタイル */
+body {
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* ヘッダー */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #cccbcb;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #8B7355;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+/* 全体的 */
+.confirm__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-title {
+    color: #8B7355;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* テーブル */
+.confirm-table {
+    border: 1px solid #cccbcb;
+}
+
+.confirm-table__inner {
+    width: 100%;
+}
+
+.confirm-table__header {
+    padding: 15px;
+    width: 20%;
+    border-bottom: 1px solid #cccbcb;
+    background-color: #B8A592;
+    font-weight: bold;
+    color: #fff;
+}
+
+.confirm-table__text {
+    padding: 15px;
+    border-bottom: 1px solid #cccbcb;
+    color: #796868;
+}
+
+.confirm-table__text input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.confirm-table__row:last-child .confirm-table__header,
+.confirm-table__row:last-child .confirm-table__text {
+    border-bottom-width: 0;
+}
+
+/* お問い合わせ内容専用のスタイル */
+.confirm-table__inner .confirm-table__text--detail {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+
+/* ボタン */
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 12px 40px;
+    width: 10%;
+    height: 45px;
+    border: none;
+    background: #8B7355;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form__button-back {
+    padding: 12px 40px;
+    width: 10%;
+    height: 45px;
+    margin-left: 15px;
+    border: none;
+    background: #fff;
+    color: #645757;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .confirm__content {
+        padding: 20px 10px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    /* テーブルを縦並びレイアウトに変更 */
+    .confirm-table__inner {
+        display: block;
+    }
+
+    .confirm-table__row {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .confirm-table__header,
+    .confirm-table__text {
+        display: block;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .confirm-table__header {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .confirm-table__text {
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin-bottom: 10px;
+    }
+
+    /* ボタンのレスポンシブ対応 */
+    .form__button {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form__button-submit,
+    .form__button-back {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header__logo {
+        font-size: 22px;
+    }
+
+    .contact-title {
+        font-size: 22px;
+    }
+}

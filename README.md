@@ -77,29 +77,6 @@ php artisan db:seed
 
 ![ER図](index.drawio.png)
 
-```
-┌─────────────────┐         ┌──────────────────┐
-│   categories    │         │     contacts     │
-├─────────────────┤         ├──────────────────┤
-│ id (PK)         │─────┐   │ id (PK)          │
-│ content         │     └──<│ categry_id (FK)  │
-│ created_at      │         │ first_name       │
-│ updated_at      │         │ last_name        │
-└─────────────────┘         │ gender           │
-                            │ email            │
-                            │ tel              │
-┌─────────────────┐         │ address          │
-│      users      │         │ building         │
-├─────────────────┤         │ detail           │
-│ id (PK)         │         │ created_at       │
-│ name            │         │ updated_at       │
-│ email           │         └──────────────────┘
-│ password        │
-│ created_at      │
-│ updated_at      │
-└─────────────────┘
-```
-
 ## URL
 
 - **開発環境**: http://localhost/

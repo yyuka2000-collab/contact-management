@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Contacts;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // categoriesテーブル
+        $this->call(CategoriesTableSeeder::class);
+
+        // contactsテーブル（35件作成）
+        Contacts::factory(35)->create();
     }
 }

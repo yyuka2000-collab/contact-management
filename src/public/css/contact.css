@@ -1,0 +1,399 @@
+/* 基本スタイル */
+body {
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* ヘッダー */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #cccbcb;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #8B7355;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+/* 全体的 */
+.contact-form__content {
+    margin: 0 auto;
+    padding: 40px 15px;
+    max-width: 1000px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-title {
+    color: #8B7355;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+/* フォーム */
+.form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form__group {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.form__group-title {
+    width: 200px;
+    text-align: left;
+    padding-top: 10px;
+    flex-shrink: 0;
+}
+
+.form__group-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* フォームラベル */
+.form__label--item {
+    color: #666666;
+    font-size: 15px;
+}
+
+.form__label--required {
+    margin-left: 2px;
+    color: #cc6262;
+    font-size: 14px;
+}
+
+.form__label--hyphen {
+    margin: 0 10px;
+    color: #666666;
+}
+
+/* Form 名前 */
+.form__input--name {
+    display: flex;
+    gap: 30px;
+}
+
+.form__input--name-item {
+    flex: 1;
+    max-width: 295px;
+}
+
+.form__input--name-item input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: #f0f0f0;
+    appearance: none;
+    font-size: 15px;
+    color: #666666;
+}
+
+.form__input--name-item input::placeholder {
+    color: #cccccc;
+}
+
+/* Form ラジオボタン */
+.form__input--radio {
+    display: flex;
+    gap: 40px;
+    padding-top: 5px;
+}
+
+.form__input--radio label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: #666666;
+}
+
+.form__input--radio input[type="radio"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.form__input--radio input[type="radio"]:checked {
+    background: #8B7355;
+    border-color: #8B7355;
+}
+
+/* Form 電話番号 */
+.form__input--tel {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.form__input--tel-item {
+    flex: 1;
+    max-width: 185px;
+}
+
+.form__input--tel-item input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: #f0f0f0;
+    font-size: 15px;
+    color: #666666;
+    text-align: center;
+}
+
+.form__input--tel-item input::placeholder {
+    color: #cccccc;
+    text-align: center;
+}
+
+.form__label--hyphen {
+    margin: 0 10px;
+    padding-top: 10px;
+    color: #666666;
+}
+
+/* テキスト欄のスタイル */
+.form__input--text input {
+    padding: 10px;
+    width: 100%;
+    max-width: 620px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #f0f0f0;
+    appearance: none;
+    font-size: 15px;
+    color: #666666;
+}
+
+.form__input--text input::placeholder {
+    color: #cccccc;
+}
+
+/* セレクトボックスのスタイル */
+.form__input--text select {
+    padding: 10px;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #f0f0f0;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23666666" d="M6 8L0 0h12z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    font-size: 15px;
+    color: #cccccc;
+    appearance: none;
+    cursor: pointer;
+}
+
+.form__input--text select.has-value {
+    color: #666666;
+}
+
+.form__input--text select option:first-child {
+    color: #cccccc;
+}
+
+/* Form テキストエリア */
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 620px;
+    height: 120px;
+    border: none;
+    border-radius: 3px;
+    background: #f0f0f0;
+    appearance: none;
+    font-size: 15px;
+    color: #666666;
+    resize: vertical;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.form__input--textarea textarea::placeholder {
+    color: #cccccc;
+}
+
+/* 入力チェックメッセージ */
+.form__error {
+    margin-top: 5px;
+    color: #ff0000;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* 確認画面ボタン */
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 12px 40px;
+    width: auto;
+    min-width: 200px;
+    height: 45px;
+    border: none;
+    background: #8B7355;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .header__inner {
+        padding: 15px 20px;
+    }
+
+    .header__logo {
+        font-size: 22px;
+    }
+
+    .contact-form__content {
+        padding: 30px 15px;
+    }
+
+    .contact-title {
+        font-size: 22px;
+    }
+
+    .form__group {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .form__group-title {
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 8px;
+    }
+
+    .form__group-content {
+        width: 100%;
+    }
+
+    /* 名前入力 */
+    .form__input--name {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form__input--name-item {
+        max-width: 100%;
+    }
+
+    /* 電話番号入力 */
+    .form__input--tel {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form__input--tel-item {
+        max-width: 100%;
+    }
+
+    .form__label--hyphen {
+        display: none;
+    }
+
+    /* テキスト入力 */
+    .form__input--text input,
+    .form__input--text select {
+        max-width: 100%;
+    }
+
+    /* テキストエリア */
+    .form__input--textarea textarea {
+        max-width: 100%;
+        height: 100px;
+    }
+
+    /* ボタン */
+    .form__button-submit {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__inner {
+        padding: 12px 15px;
+    }
+
+    .header__logo {
+        font-size: 20px;
+    }
+
+    .contact-form__content {
+        padding: 20px 10px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .form__group {
+        margin-bottom: 20px;
+    }
+
+    .form__label--item {
+        font-size: 14px;
+    }
+
+    .form__label--required {
+        font-size: 13px;
+    }
+
+    /* 入力欄のサイズ調整 */
+    .form__input--name-item input,
+    .form__input--tel-item input,
+    .form__input--text input,
+    .form__input--text select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .form__input--textarea textarea {
+        padding: 8px;
+        font-size: 14px;
+        height: 80px;
+    }
+
+    /* ラジオボタン */
+    .form__input--radio {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* ボタン */
+    .form__button-submit {
+        padding: 10px 30px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
