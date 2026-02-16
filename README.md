@@ -160,15 +160,6 @@ php artisan migrate:fresh --seed
 | created_at | timestamp       |             |          |             |      |
 | updated_at | timestamp       |             |          |             |      |
 
-## ダミーデータ作成
-
-以下のコマンドでダミーデータを作成できます:
-
-```bash
-# カテゴリデータ（5件）とお問い合わせデータ（35件）を作成
-php artisan db:seed
-```
-
 ## その他
 
 - 認証機能: Laravel Fortify使用
