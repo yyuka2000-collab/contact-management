@@ -48,22 +48,27 @@ composer install
 cp .env.example .env
 ```
 
+`.env`ファイルを開き、以下の項目を環境に合わせて設定してください。
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=laravel_db      # 任意のデータベース名
+DB_USERNAME=laravel_user    # MySQLのユーザー名
+DB_PASSWORD=laravel_pass    # MySQLのパスワード
+```
+
 4. アプリケーションキーを生成
 
 ```bash
 php artisan key:generate
 ```
 
-5. マイグレーションを実行
+5. マイグレーション＆シーディングを実行
 
 ```bash
-php artisan migrate
-```
-
-6. シーディングを実行
-
-```bash
-php artisan db:seed
+php artisan migrate:fresh --seed
 ```
 
 ## 使用技術（実行環境）
